@@ -19,8 +19,12 @@
       <v-col cols="1">
         <v-row>
           <v-col cols="12">
-            <v-icon color="#007bff">mdi-arrow-up-bold-hexagon-outline </v-icon>
-            <v-icon color="#a8a8a8">mdi-arrow-down-bold-hexagon-outline</v-icon>
+            <v-icon :color="thread.upvotedByUser ? '#000000' : '#a8a8a8'"
+              >mdi-arrow-up-bold-hexagon-outline
+            </v-icon>
+            <v-icon :color="thread.downvotedByUser ? '#000000' : '#a8a8a8'"
+              >mdi-arrow-down-bold-hexagon-outline</v-icon
+            >
           </v-col>
         </v-row>
       </v-col>

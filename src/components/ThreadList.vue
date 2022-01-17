@@ -12,28 +12,11 @@
 import ThreadCard from "@/components/ThreadCard.vue";
 
 export default {
-  name: "HelloWorld",
+  props: ["threads"],
+  name: "ThreadList",
   components: {
     ThreadCard,
   },
-  data: () => ({
-    threads: [
-      {
-        Id: "1",
-        title:
-          "Fiz essa parada doida aqui. Aenean dictum lorem quam, ut condimentum sem posuere vel. Morbi nec sollicitudin lectus. Vivamus elementum mauris sem, nec tincidu",
-      },
-      {
-        Id: "2",
-        title:
-          "cursus turpis. Nam enim ipsum, porta ac sem tincidunt, imperdiet convallis neque. Quisque semper neque vita",
-      },
-      {
-        Id: "3",
-        title:
-          "dignissim vehicula turpis. Cras pharetra molestie varius. Nulla erat dui, interdum sed hendrerit at, convallis in tellus. Vivamus tincidunt est nec consectetur interdum. Integer ",
-      },
-    ],
-  }),
+  data: () => ({}),
 };
 </script>
